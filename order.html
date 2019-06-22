@@ -67,8 +67,8 @@
     <!--Container-->
     <div class="container w-full mx-auto pt-20">
 
-        <div class="flex flex-col bg-orange-100  w-full
-		border-b-4 border-orange-800 rounded-lg shadow-lg p-2">
+        <div class="flex flex-col bg-white  w-full p-2
+		 shadow-lg">
             <div class="w-full border-b-2 border-orange-800">
                 <div class="font-bold text-gray-700 text-2xl p-2">
                     <i class="fas fa-shopping-cart"></i> Finish your Order!!
@@ -76,24 +76,50 @@
             </div>
 
             <div class="border-b border-orange-800 px-4 py-2 m-2">
-                <div class="flex">
-                    <div class="font-bold flex-auto block text-gray-700">
-                        Cupcake:
-                    </div>
-                    <div class="flex-auto block text-gray-700 text-right">
-                        $ 10
-                    </div>
+                <div class="font-bold flex-auto block text-gray-700">
+                    Order Items:
                 </div>
             </div>
 
             <div class="border-b border-orange-800 px-4 py-2 m-2">
                 <div class="flex">
-                    <div class="font-bold flex-auto block text-gray-700">
-                        Cupcake:
-                    </div>
-                    <div class="flex-auto block text-gray-700 text-right">
-                        $ 10
-                    </div>
+                    <table class="w-full text-sm shadow-md mb-4">
+                        <tbody>
+                            <tr>
+                                <th class="text-left p-3 px-5">Amount</th>
+                                <th class="text-left p-3 px-5">Item</th>
+                                <th class="text-left p-3 px-5">Description</th>
+                                <th class="text-left p-3 px-5">Price</th>
+
+                                <th></th>
+                            </tr>
+                            <tr class="border-b hover:bg-orange-100 bg-gray-100">
+                                <td class="p-3 px-5">
+                                    <a href="#" class="btn btn-sm m-2"><i class="fa fa-minus"></i></a> 1
+                                    <a href="#" class="btn btn-sm m-2"><i class="fa fa-plus"></i></a>
+                                </td>
+                                <td class="p-3 px-5"><input type="text" value="user.email" class="bg-transparent"></td>
+                                <td class="p-3 px-5">
+                                    <select value="user.role" class="bg-transparent">
+                                                <option value="user">user</option>
+                                                <option value="admin">admin</option>
+                                            </select>
+                                </td>
+                                <td class="p-3 px-5">
+                                    <select value="user.role" class="bg-transparent">
+                                                    <option value="user">user</option>
+                                                    <option value="admin">admin</option>
+                                                </select>
+                                </td>
+                                <td class="p-3 px-5 flex justify-end">
+                                    <a class="btn btn-sm danger "></a>
+
+                                    <button type="button" class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline"><i class="fa fa-remove"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
 
